@@ -21,7 +21,7 @@ USUARIOS = {
 # Cole o link da sua planilha Google dentro das aspas abaixo.
 # Exemplo: LINK_DA_PLANILHA = "https://docs.google.com/spreadsheets/d/1Bxi..."
 # ==============================================================================
-LINK_DA_PLANILHA = "https://docs.google.com/spreadsheets/d/1Ea_3_QqvuLNZTowRaqn_ewkOd_QZAI_6Ofk75cDkvNw/edit?usp=sharing"
+LINK_DA_PLANILHA = "https://docs.google.com/spreadsheets/d/1Ea_3_QqvuLNZTowRaqn_ewkOd_QZAI_6Ofk75cDkvNw/edit"
 
 # --- Funções Auxiliares ---
 def formatar_real(valor):
@@ -211,3 +211,4 @@ else:
             if st.button("🗑️ Excluir Registro"):
                 excluir_registro("lancamentos", idx_del)
                 st.success("Excluído!"); time.sleep(1); st.rerun()
+
