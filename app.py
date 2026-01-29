@@ -5,11 +5,6 @@ import plotly.graph_objects as go
 import time
 from datetime import datetime
 from streamlit_gsheets import GSheetsConnection
-import pygsheets
-
-
-credicias = pygsheets.authorize(service_file="/cred.json")
-
 
 # --- Configuração da Página ---
 st.set_page_config(page_title="Gestão de Verbas (Web)", layout="wide")
@@ -257,5 +252,6 @@ else:
                     time.sleep(1)
                     st.rerun()
                 else: st.error("Índice não existe.")
+
 
 
