@@ -11,9 +11,10 @@ st.set_page_config(page_title="Gestão de Verbas (Web)", layout="wide")
 
 # --- CREDENCIAIS DE ACESSO ---
 USUARIOS = {
-    "admin": {"senha": "123", "nome": "Administrador", "permissao": "admin"},
+    "admin": {"senha": "58832", "nome": "Administrador", "permissao": "admin"},
     "gv1":   {"senha": "gv1", "nome": "Gerente de Vendas 1", "permissao": "GV 1"},
     "gv2":   {"senha": "gv2", "nome": "Gerente de Vendas 2", "permissao": "GV 2"},
+    "gv3":   {"senha": "gv3", "nome": "Gerente de Vendas 3", "permissao": "GV 3"},
 }
 
 # --- CSS Personalizado ---
@@ -251,4 +252,5 @@ else:
                     time.sleep(1)
                     st.rerun()
                 else:
+
                     st.error("Index não encontrado.")
